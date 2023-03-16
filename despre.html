@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <title>Imobiliare</title>
+    <link rel="stylesheet" href="css/stil.css" type="text/css"/>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/index.html">Acasă</a>
+        <a href="/inregistreaza.html">Înregistrare</a>
+        <a href="/video.html">Video</a>
+        <a href="/desen.html">Desen</a>
+        <a href="/despre.html">Despre</a>
+    </nav>
+    <header>
+        <img src="imagini/logo.png" alt="" width="100">
+        <strong>Noi îți facem visul realitate!</strong>
+        <h1>
+            <span>Anunțuri imobiliare</span>
+        </h1>
+        <hr>
+    </header>
+    
+    <main>
+        <h2>Proprietăți imobile noi</h2>
+        <p>Alege locul căruia îi spui <i>acasă</i> în <b> cele mai bune proprietati.</b></p>
+        <p>
+            Un exemplu de imobil îl puteți găsi în imaginea următoare care se află la adresa
+            <a
+                href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMX_hSXJiR0Z-JQ1ObWo_wBUuTIFVmbw8gZiS1AYSn&s">
+                https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMX_hSXJiR0Z-JQ1ObWo_wBUuTIFVmbw8gZiS1AYSn&s</a>
+            <br>
+            Imaginea are atributul <code>height</code> de valoare 200.
+            <br>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMX_hSXJiR0Z-JQ1ObWo_wBUuTIFVmbw8gZiS1AYSn&s" alt="Nu s-a gasit imaginea" width="400" height="200">
+        </p>
+        <!-- <p>Imaginea are atributul <code>height</code> de valoare 147./p> -->
+        <!-- <img src="HTML_logo.png" alt="Nu s-a gasit imaginea"> -->
+
+        <p><b>Exemple de proprietăți:</b></p>
+
+        <table id="houses">
+            <tr>
+                <th>Tip casă</th>
+                <th>Teren</th>
+                <th>Nr etaje</th>
+                <th>Facilități</th>
+                <th>Zonă</th>
+            </tr>
+            <tr>
+                <td>Casa simplă</td>
+                <td>2 ari</td>
+                <td>parter</td>
+                <td>centrală gaz</td>
+                <td>Tătărași Nord</td>
+            </tr>
+            <tr>
+                <td>Duplex</td>
+                <td>3 ari</td>
+                <td>1 etaj</td>
+                <td>centrală lemne</td>
+                <td>Tătărași Sud</td>
+            </tr>
+        </table>
+
+        <p>
+            Mai multe imagini poti fi accesate la
+            <a href="https://commons.wikimedia.org/w/index.php?search=house&title=Special:MediaSearch&go=Go&type=image">
+                https://commons.wikimedia.org
+            </a>
+        </p>
+        <p>Suntem dispuși să vă oferim servicii precum </p>
+        <ul>
+            <li>Case la <b>rosu</b></li>
+            <li>Case la <b>cheie</b></li>
+            <li>Apartmente</li>
+        </ul>
+
+        <iframe
+            src="https://www.casaprima.ro/?gclid=Cj0KCQiAgaGgBhC8ARIsAAAyLfHsgwiIFrnwNUCimGD-w0cOipLl2kVbpMlJ8K1N2qfDhGVwuXXEopcaAmW_EALw_wcB"
+            width="100%" height="500">
+        </iframe>
+        <h3>
+            Pentru mai multe detalii, completați formularul de mai jos pentru a fi contactați:
+        </h3>
+
+        <form id="registration">
+            <fieldset>
+                <label>Nume:</label>
+                <input type="text" name="lastname"><br>
+                <label>Prenume:</label>
+                <input type="text" name="firstname"><br>
+                <label>Parolă:</label>
+                <input type="password" name="password"><br>
+                <label>Tip casă:</label>
+                <select name="tip casa" id="houseType">
+                    <option value="casa_parter">Casă doar cu parter</option>
+                    <option value="casa_etaj">Casă cu parter și etaj</option>
+                    <option value="duplex_parter">Duplex doar cu parter</option>
+                    <option value="duplex_etaj">Duplex cu parter și etaj</option>
+                </select>
+                <br><br>
+                <label><b>Alte informații legate de așteptările dumneavoastră:</b></label>
+                <br>
+                <textarea name="info" id="info" cols="30" rows="10"></textarea>
+                <br>
+                <input type="checkbox" id="agreement" name="agreement" value="agr">
+                <label for="agreement"> Sunt de acord cu condițiile.</label>
+                <br>
+                <input id="submitBtn" type="submit" value="Submit">
+            </fieldset>
+        </form>
+
+        <!-- https://html.spec.whatwg.org/multipage/ -->
+
+
+    </main>
+    <footer>
+        &copy; Imobiliare.ro 2023
+    </footer>
+</body>
+
+</html>
