@@ -2,61 +2,71 @@ body {
     margin: 0;
     /* background-color: lightblue; */
 }
+
 .navbar {
     overflow: hidden;
     background-color: black;
     display: flex;
-    justify-content: left;    
+    justify-content: space-between;
+    /* flex-flow: column wrap; */
+    /* display: inline-block; */
+    /* display: flex; */
+    align-items: center;
+
   }
 .navbar a{
 
     color: #f2f2f2;
-    text-align: center;
+    /* text-align: center; */
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
-.navbar a:hover {
+.nav-list{
+    display: inline-block;
+}
+.nav-list a:hover {
     background-color: #ddd;
     color: black;
 }
-
-#houses{
-    border-collapse: collapse;
-}
-#houses td, #houses th{
-    border: 1px solid black;
-    text-align: left;
-    padding: 10px;
-}
-#houses th{
-    text-align: center;
+.menu{
+    padding: 14px 16px;
+    display: none;
 }
 
-#registration {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+.menu-line{
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 3px;
 }
-h1{
-    display: flex;
-    justify-content: center;
-}
-#submitBtn{
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-}
+@media all and (max-width: 480px) {
+    .navbar{
+        flex-direction: column;
+    } 
+    .menu{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
 
-.site-identity{
-    display: flex;
-    justify-content: left;
-}
-/* .site-identity img{
-    display: flex;
-    justify-content: left;
-} */
-.site-identity p{
-    display: flex;
-    align-items: center;
+    }
+    .nav-list a{
+        display: block;
+        border-top: 1px solid white;
+    }
+    .nav-list{
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+    }
+    .logo{
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .active{
+        display: block;
+    }
 }
