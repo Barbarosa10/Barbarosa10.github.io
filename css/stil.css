@@ -1,10 +1,10 @@
 body {
     margin: 0;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
     display: flex;
     justify-content: left;    
   }
