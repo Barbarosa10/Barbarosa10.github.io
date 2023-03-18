@@ -98,10 +98,9 @@ a{
         display: flex;
         flex-direction: column;
     }
-    .service{
+    .theBox3{
         margin-top: 10px;
         margin-bottom: 20px;
-    
     
     }
 }
@@ -211,6 +210,8 @@ h1{
     position: relative;
     margin: 10px 0px 40px 15px;
     display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .txtBox3{
 
