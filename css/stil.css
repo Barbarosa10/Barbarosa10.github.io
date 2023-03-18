@@ -45,8 +45,9 @@ body {
 a{
     text-decoration: none;
     color: black;
-    user-select: none;
-    outline: none;
+    /* user-select: none;
+    outline: none; */
+    -webkit-tap-highlight-color: transparent;
 }
 .menu{
     padding: 14px 16px;
