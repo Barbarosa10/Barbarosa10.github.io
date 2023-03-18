@@ -213,30 +213,27 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
+.theBox3:hover .txtBox3{
+
+	background: white;
+
+}
 .txtBox3{
 
     position: absolute;
-    height: 120px;
+    height: 90px;
     width: 100%;
     background: gray;
     bottom: 0; 
 }
-h4{	
-    padding:0;
-    margin:10px 0 10px 15px;
-    font-size:13;
-    font-weight:bold;
-    color:#e6540c;
+
+h3{	
+    /* padding:0; */
+    position: relative;
+    bottom: 20px;
+
 }
 
-h5{	
-    padding:0;
-    margin:10px 0 10px 15px;
-    font-size:16;
-    font-weight:400;
-    text-transform:uppercase;
-    color:rgb(230,230,230);
-}
 /* .service{
     width: 300px;
     display: inline-block;
@@ -260,17 +257,23 @@ h5{
     background-color: white; 
 }*/
 
-.phone{
+/* .phone{
     width: 100px;
     display: block;
-    /* display: block; */
     position: fixed;
-    /* position: absolute; */
     bottom: 10px;
     left: 10px;
-    /* z-index: 100; */
+} */
+.phone{
+   font-size: 48px;
+   color: green;
+   position: fixed; 
+   bottom: 10px;
+   left: 30px;
 }
-
+.phone:hover{
+    font-size: 64px;
+}
 /* @media screen and (max-width: 600px) {
     .container{
 
