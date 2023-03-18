@@ -46,6 +46,7 @@ a{
     text-decoration: none;
     color: black;
     user-select: none;
+    outline: none;
 }
 .menu{
     padding: 14px 16px;
