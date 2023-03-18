@@ -13,13 +13,13 @@
     <nav class="navbar">
         <div class="logo">
             <a href="/index.html">
-                <img src="imagini/logo1.png" alt="" width="100">
+                <img src="imagini/logo1.png" alt="" width="150">
             </a>
         </div>
         <div class="nav-list" id="navi-list">
             <a href="/index.html">Acasă</a>
             <a href="/produse.html">Produse</a>
-            <a href="/despre.html">Despre</a>
+            <a class="active" href="/despre.html">Despre</a>
         </div>
         <div class="menu" id="toggle-button">
             <button class="menu-button" onclick="menuClick()">
@@ -30,7 +30,24 @@
         </div>
     </nav>
     <header>
+        <div class="slideshow-container">
 
+            <div class="mySlides fade">
+                <img src="imagini/img1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="imagini/img2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="imagini/logooo.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
     </header>
     
     <main>

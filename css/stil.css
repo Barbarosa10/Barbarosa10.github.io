@@ -12,21 +12,28 @@ body {
     /* display: inline-block; */
     /* display: flex; */
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
 
-  }
+}
 .navbar a{
 
     color: #f2f2f2;
     /* text-align: center; */
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 22px;
+}
+.nav-list a.active{
+    background-color: gray;
+    color: black;
 }
 .nav-list{
     display: inline-block;
 }
 .nav-list a:hover {
-    background-color: #ddd;
+    background-color: gray;
     color: black;
 }
 .menu{
@@ -40,6 +47,7 @@ body {
     background-color: white;
     margin-bottom: 3px;
 }
+
 @media screen and (max-width: 600px) {
     .navbar{
         flex-direction: column;
@@ -48,7 +56,7 @@ body {
         display: block;
         position: absolute;
         right: 10px;
-        top: 10px;
+        top: 20px;
 
     }
     .nav-list a{
@@ -76,4 +84,84 @@ body {
     border: none;
     cursor:pointer;
     overflow: hidden; 
+}
+header{
+    width: 100%;
+    display: block;
+    /* background-image: url(../imagini/logooo.jpg); */
+    /* background-position: center, center; */
+    background-color: gray
+}
+header img{
+    width: 100%;
+    display: block;
+}
+
+.mySlides {
+    display: none;
+    /* height: 300px; */
+    /* max-width: 1000px;
+    margin-left: 50vh;
+    margin-right: 50vh; */
+}
+.slideshow-container {
+    /* height: 100px; */
+    /* background-size: cover;
+    background-position: center; */
+    /* top: 100px; */
+    /* height: 50vh; */
+    /* background-color: black; */
+    max-width: 1200px;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    padding-top: 76px;
+    z-index: 40;
+  }
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  /* .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  } */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+.banner-area{
+    background-image: url(../imagini/logooo.jpg);
+    background-size: cover;
+    background-position: center center;
+    /* top: 100px; */
+    padding-top: 76px;
+    height: 50vh;
+
 }
