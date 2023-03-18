@@ -42,6 +42,10 @@ body {
     color: black;
     border-radius: 10px;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 .menu{
     padding: 14px 16px;
     display: none;
