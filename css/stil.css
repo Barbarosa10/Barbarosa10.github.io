@@ -2,6 +2,9 @@ body {
     margin: 0;
     background-color: black;
     color: white;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 26px;
 }
 
 .navbar {
@@ -29,6 +32,7 @@ body {
 .nav-list a.active{
     background-color: gray;
     color: black;
+    border-radius: 10px;
 }
 .nav-list{
     display: inline-block;
@@ -36,6 +40,7 @@ body {
 .nav-list a:hover {
     background-color: gray;
     color: black;
+    border-radius: 10px;
 }
 .menu{
     padding: 14px 16px;
@@ -78,6 +83,9 @@ body {
     .active{
         display: block;
     }
+
+
+
 }
 .menu-button{
     background-color: Transparent;
@@ -91,7 +99,7 @@ header{
     display: block;
     /* background-image: url(../imagini/logooo.jpg); */
     /* background-position: center, center; */
-    background-color: grey;
+    background-color: white;
 }
 header img{
     width: 100%;
@@ -112,7 +120,7 @@ header img{
     /* top: 100px; */
     /* height: 50vh; */
     /* background-color: black; */
-    max-width: 1200px;
+    max-width: 1000px;
     background-size: cover;
     position: relative;
     margin: auto;
@@ -126,7 +134,7 @@ header img{
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -137,10 +145,10 @@ header img{
     right: 0;
     border-radius: 3px 0 0 3px;
   }
-  /* .prev {
+  .prev {
     left: 0;
     border-radius: 3px 0 0 3px;
-  } */
+  }
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
     color: white;
@@ -164,5 +172,62 @@ header img{
     /* top: 100px; */
     padding-top: 76px;
     height: 50vh;
+}
+h1{
+    font-size: 50px;
+}
 
+.services{
+    width: 100%;
+    /* margin: auto; */
+    display: flex;
+    justify-content:center;
+    
+    /* background-color: aqua; */
+    /* margin-right: auto;
+    margin-left: auto; */
+    /* position: relative; */
+
+}
+.container{
+    /* width: 50%; */
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+.service{
+    width: 300px;
+    display: inline-block;
+    background-color: gray;
+    color: black;
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: grey;
+    font-weight:bold;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+.service:hover{
+    background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+
+        display: flex;
+        flex-direction: column;
+    }
+    .service{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    
+    
+    }
 }
