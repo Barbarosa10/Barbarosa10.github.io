@@ -83,6 +83,7 @@ a{
         display: none;
     }
     .logo{
+
         width: 100%;
         margin-top: 10px;
         margin-left: 10px;
@@ -182,37 +183,60 @@ header img{
     to {opacity: 1}
   }
 
-.banner-area{
-    background-image: url(../imagini/logooo.jpg);
-    background-size: cover;
-    background-position: center center;
-    /* top: 100px; */
-    padding-top: 76px;
-    height: 50vh;
-}
 h1{
     font-size: 50px;
 }
 
 .services{
     width: 100%;
-    /* margin: auto; */
+
     display: flex;
-    justify-content:center;
+    justify-content:center;;
     
-    /* background-color: aqua; */
-    /* margin-right: auto;
-    margin-left: auto; */
-    /* position: relative; */
+
 
 }
 .container{
-    /* width: 50%; */
     width: 1000px;
     display: flex;
     justify-content: center;
 }
-.service{
+
+.theBox3{
+		
+    width: 234px;
+    height: 330px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px 0px 40px 15px;
+    display:inline-block;
+}
+.txtBox3{
+
+    position: absolute;
+    height: 120px;
+    width: 100%;
+    background: gray;
+    bottom: 0; 
+}
+h4{	
+    padding:0;
+    margin:10px 0 10px 15px;
+    font-size:13;
+    font-weight:bold;
+    color:#e6540c;
+}
+
+h5{	
+    padding:0;
+    margin:10px 0 10px 15px;
+    font-size:16;
+    font-weight:400;
+    text-transform:uppercase;
+    color:rgb(230,230,230);
+}
+/* .service{
     width: 300px;
     display: inline-block;
     background-color: gray;
@@ -232,7 +256,18 @@ h1{
 
 }
 .service:hover{
-    background-color: white;
+    background-color: white; 
+}*/
+
+.phone{
+    width: 100px;
+    display: block;
+    /* display: block; */
+    position: fixed;
+    /* position: absolute; */
+    bottom: 10px;
+    left: 10px;
+    /* z-index: 100; */
 }
 
 /* @media screen and (max-width: 600px) {
