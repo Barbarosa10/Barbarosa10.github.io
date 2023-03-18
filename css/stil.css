@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    /* background-color: lightblue; */
+    background-color: black;
+    color: white;
 }
 
 .navbar {
@@ -90,7 +91,7 @@ header{
     display: block;
     /* background-image: url(../imagini/logooo.jpg); */
     /* background-position: center, center; */
-    background-color: gray
+    background-color: grey;
 }
 header img{
     width: 100%;
