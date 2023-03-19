@@ -89,7 +89,6 @@ a{
         display: none;
     }
     .logo{
-
         width: 100%;
         margin-top: 10px;
         margin-left: 10px;
@@ -278,9 +277,9 @@ h3{
     right: 30px;
     z-index: 45;
 }
-.whatsapp:hover{
+/* .whatsapp:hover{
     font-size: 64px;
-}
+} */
 .phone{
    font-size: 48px;
    color: blue;
@@ -289,9 +288,9 @@ h3{
    right: 30px;
    z-index: 45;
 }
-.phone:hover{
+/* .phone:hover{
     font-size: 64px;
-}
+} */
 footer{
     background-color: #303036;
     color: white;
