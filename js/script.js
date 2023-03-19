@@ -5,6 +5,7 @@ function menuClick() {
   naviList.classList.toggle('active');
 }
 
+
 let slideIndex = 1;
 showSlides(slideIndex);
 

@@ -270,12 +270,23 @@ h3{
     bottom: 10px;
     left: 10px;
 } */
+.whatsapp{
+    font-size: 48px;
+    color: green;
+    position: fixed; 
+    bottom: 78px;
+    right: 30px;
+    z-index: 45;
+}
+.whatsapp:hover{
+    font-size: 64px;
+}
 .phone{
    font-size: 48px;
-   color: green;
+   color: blue;
    position: fixed; 
    bottom: 10px;
-   left: 30px;
+   right: 30px;
    z-index: 45;
 }
 .phone:hover{
@@ -303,6 +314,7 @@ footer .footer-content .footer-section{
     padding-top: 40px;
     /* padding-bottom: 5px; */
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 footer .footer-bottom{
