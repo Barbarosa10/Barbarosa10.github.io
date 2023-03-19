@@ -1,10 +1,16 @@
-body {
+html,body {
+    height: 100%;
     margin: 0;
     background-color: black;
     color: white;
-    text-align: center;
+    /* text-align: center; */
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 26px;
+}
+
+.page-wrapper{
+    min-height: 100%;
+    text-align: center;
 }
 
 .navbar {
@@ -61,7 +67,7 @@ a{
     margin-bottom: 3px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .navbar{
         flex-direction: column;
     } 
@@ -116,7 +122,7 @@ header{
     display: block;
     /* background-image: url(../imagini/logooo.jpg); */
     /* background-position: center, center; */
-    background-color: white;
+    background-color: gray;
 }
 header img{
     width: 100%;
@@ -190,7 +196,7 @@ h1{
     width: 100%;
 
     display: flex;
-    justify-content:center;;
+    justify-content:center;
     
 
 
@@ -270,9 +276,78 @@ h3{
    position: fixed; 
    bottom: 10px;
    left: 30px;
+   z-index: 45;
 }
 .phone:hover{
     font-size: 64px;
+}
+footer{
+    background-color: #303036;
+    color: white;
+    height: 400px;
+    position: relative;
+}
+
+footer .footer-content{
+    border: 1px solid black;
+    height: 320px;
+    display: flex;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+footer .footer-content .footer-section{
+    flex: 1;
+    border: 1px solid black;
+    padding-top: 40px;
+    /* padding-bottom: 5px; */
+    padding-left: 20px;
+}
+
+footer .footer-bottom{
+    background-color: #343a40;
+    color: white;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 25px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+
+}
+footer h2{
+    padding-left: 20px;
+}
+footer li{
+    color: white;
+    /* text-align: left; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    
+}
+footer i{
+    color: white;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 800px) {
+    footer .footer-content{
+        flex-direction: column;
+        /* padding-bottom: 20px; */
+    
+    }
+    footer{
+        height: 1000px;
+    }
+    
+    footer .footer-content{
+        height: 923px;
+    }
 }
 /* @media screen and (max-width: 600px) {
     .container{
