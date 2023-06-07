@@ -10,7 +10,7 @@
     <script src="./js/script.js" defer></script>
 </head>
 
-<body>
+<body onload="showImageSlides(1, 'house')">
     <nav class="navbar">
         <div class="logo">
             <a href="/index.html">
@@ -18,15 +18,8 @@
             </a>
         </div>
         <div class="nav-list" id="navi-list">
-            <a class="active" href="/index.html">Acasă</a>
-            <!-- <div class="lista-produse">
-                <a href="#" id="button-produse">Produse</a>
-                <div class="drop-list">
-                    <a href="/apartamente.html">Apartamente</a>
-                    <a href="/case.html">Case</a>
-                    <a href="/duplex.html" >Duplexuri</a>
-                </div>
-            </div> -->
+            <a href="/index.html">Acasă</a>
+            <!-- <a class="active" href="/produse.html">Produse</a> -->
             <a href="/despre.html" >Despre</a>
         </div>
         <div class="menu" id="toggle-button">
@@ -35,52 +28,92 @@
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
             </button>
+
         </div>
     </nav>
 
-    <header>
-        <div class="slideshow-container">
+    <main class="page-wrapper" >
+        
+        <div class="about">
+            <h1>Case</h1>
+            <p>Case cu un etaj, două băi, centrală pe gaz și șemineu.</p>
+        </div>
 
-            <div class="mySlides fade">
-                <img src="imagini/img001.png" style="width:100%">
-            </div>
+        <div class="slideshow-container-house">
 
-            <div class="mySlides fade">
-                <img src="imagini/img002.png" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
+            <div class="houseSlides fade">
                 <img src="imagini/house.png" style="width:100%">
             </div>
 
-            <div class="mySlides fade">
-                <img src="imagini/img004.png" style="width:100%">
+            <div class="houseSlides fade">
+                <img src="imagini/house2.png" style="width:100%">
             </div>
 
-            <div class="mySlides fade">
-                <img src="imagini/img005.png" style="width:100%">
+            <div class="houseSlides fade">
+                <img src="imagini/house3.png" style="width:100%">
             </div>
-            <!-- <div class="mySlides fade">
-                <img src="imagini/img4.png" style="width:100%">
-            </div> -->
 
-            <a class="prev" onclick="plusSlides(-1, '')">❮</a>
-            <a class="next" onclick="plusSlides(1, '')">❯</a>
+            <div class="houseSlides fade">
+                <img src="imagini/house4.png" style="width:100%">
+            </div>
+
+            <div class="houseSlides fade">
+                <img src="imagini/house5.png" style="width:100%">
+            </div>
+
+            <div class="houseSlides fade">
+                <img src="imagini/house6.png" style="width:100%">
+            </div>
+
+            <div class="houseSlides fade">
+                <img src="imagini/house7.png" style="width:100%">
+            </div>
+
+            <div class="houseSlides fade">
+                <img src="imagini/house8.png" style="width:100%">
+            </div>
+
+            <div class="houseSlides fade">
+                <img src="imagini/house9.png" style="width:100%">
+            </div>
+
+            <div class="houseSlides fade">
+                <img src="imagini/house16.png" style="width:100%">
+            </div>
+
+            <div class="houseSlides fade">
+                <img src="imagini/house10.png" style="width:100%">
+            </div>
+
+            <div class="houseSlides fade">
+                <img src="imagini/house11.png" style="width:100%">
+            </div>
+
+            <div class="houseSlides fade">
+                <img src="imagini/house12.png" style="width:100%">
+            </div>
+
+            <div class="houseSlides fade">
+                <img src="imagini/house13.png" style="width:100%">
+            </div>
+
+            <div class="houseSlides fade">
+                <img src="imagini/house14.png" style="width:100%">
+            </div>
+
+            <div class="houseSlides fade">
+                <img src="imagini/house15.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 'house')">❮</a>
+            <a class="next" onclick="plusSlides(1, 'house')">❯</a>
 
         </div>
-        <!-- <img src="imagini/logooo.jpg" alt=""> -->
-    </header>
-    <main class="page-wrapper">
-        <div class="about">
-            <h1>Despre noi</h1>
-            <p>Societatea CASE DUCIUC SRL, fondată în 2016, îți oferă o gamă largă de servicii, pentru a asigura o viață
-                mai bună.</p>
-        </div>
-        <br><br>
+<!-- 
         <div class="services">
             <div class="container">
 
-                <div class="theBox3"><a href="/apartamente.html">
+                <div class="theBox3"><a href="/despre.html">
                         <img src="imagini/img001.png">
                         <div class="txtBox3">
                             <h3>Apartamente roșu/cheie </h3>
@@ -88,21 +121,21 @@
                     </a>
                 </div>
 
-                <div class="theBox3"><a href="/duplex.html">
+                <div class="theBox3"><a href="/despre.html">
                         <img src="imagini/img004.png">
                         <div class="txtBox3">
                             <h3>Duplex roșu/cheie</h3>
                         </div>
                     </a>
                 </div>
-                <div class="theBox3"><a href="/case.html">
-                        <img src="imagini/house.png">
+                <div class="theBox3"><a href="/despre.html">
+                        <img src="imagini/img003.png">
                         <div class="txtBox3">
                             <h3>Case roșu/cheie</h3>
                         </div>
                     </a>
                 </div>
-            </div>
+            </div> -->
             <!-- <div class="container">
 
 
@@ -131,7 +164,7 @@
                         <img src="imagini/duplex.png" width="250px" alt="">
                     </a>
                 </div> -->
-        <!-- </div> -->
+        </div>
         <!-- <a href="./despre.html">
                 <img src="imagini/icon1.png" alt="buttonpng"  />
                 mult scris

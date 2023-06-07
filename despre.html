@@ -3,9 +3,10 @@
 
 <head>
     <title>Imobiliare</title>
-    <link rel="stylesheet" href="css/stil.css" type="text/css"/>
+    <link rel="stylesheet" href="css/stil.css" type="text/css" />
     <link rel="shortcut icon" type="image/x-icon" href="imagini/icon1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./js/script.js" defer></script>
 </head>
 
@@ -18,8 +19,8 @@
         </div>
         <div class="nav-list" id="navi-list">
             <a href="/index.html">Acasă</a>
-            <a href="/produse.html">Produse</a>
-            <a class="active" href="/despre.html">Despre</a>
+            <!-- <a href="/produse.html">Produse</a> -->
+            <a class="active" href="/despre.html" >Despre</a>
         </div>
         <div class="menu" id="toggle-button">
             <button class="menu-button" onclick="menuClick()">
@@ -27,129 +28,72 @@
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
             </button>
+
         </div>
     </nav>
-    <header>
-        <div class="slideshow-container">
 
-            <div class="mySlides fade">
-                <img src="imagini/img1.png" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="imagini/img2.png" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="imagini/img3.png" style="width:100%">
-            </div>
-            
-            <div class="mySlides fade">
-                <img src="imagini/img4.png" style="width:100%">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-
+    <main class="page-wrapper" >
+        
+        <div class="about">
+            <h1>Despre</h1>
+            <p>Pentru mai multe detalii, ne poți contacta la numărul de telefon disponibil. Ne aflăm în Ipotești, Suceava și puteți vizita oricând produsele noastre.</p><br>
+            <h4>Adresa: Județul Suceava, localitatea Ipotești, Str. Bogdan Vodă</h4>
         </div>
-    </header>
-    
-    <main>
-        <h2>Proprietăți imobile noi</h2>
-        <p>Alege locul căruia îi spui <i>acasă</i> în <b> cele mai bune proprietati.</b></p>
-        <p>
-            Un exemplu de imobil îl puteți găsi în imaginea următoare care se află la adresa
-            <a
-                href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMX_hSXJiR0Z-JQ1ObWo_wBUuTIFVmbw8gZiS1AYSn&s">
-                https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMX_hSXJiR0Z-JQ1ObWo_wBUuTIFVmbw8gZiS1AYSn&s</a>
-            <br>
-            Imaginea are atributul <code>height</code> de valoare 200.
-            <br>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMX_hSXJiR0Z-JQ1ObWo_wBUuTIFVmbw8gZiS1AYSn&s" alt="Nu s-a gasit imaginea" width="400" height="200">
-        </p>
-        <!-- <p>Imaginea are atributul <code>height</code> de valoare 147./p> -->
-        <!-- <img src="HTML_logo.png" alt="Nu s-a gasit imaginea"> -->
-
-        <p><b>Exemple de proprietăți:</b></p>
-
-        <table id="houses">
-            <tr>
-                <th>Tip casă</th>
-                <th>Teren</th>
-                <th>Nr etaje</th>
-                <th>Facilități</th>
-                <th>Zonă</th>
-            </tr>
-            <tr>
-                <td>Casa simplă</td>
-                <td>2 ari</td>
-                <td>parter</td>
-                <td>centrală gaz</td>
-                <td>Tătărași Nord</td>
-            </tr>
-            <tr>
-                <td>Duplex</td>
-                <td>3 ari</td>
-                <td>1 etaj</td>
-                <td>centrală lemne</td>
-                <td>Tătărași Sud</td>
-            </tr>
-        </table>
-
-        <p>
-            Mai multe imagini poti fi accesate la
-            <a href="https://commons.wikimedia.org/w/index.php?search=house&title=Special:MediaSearch&go=Go&type=image">
-                https://commons.wikimedia.org
-            </a>
-        </p>
-        <p>Suntem dispuși să vă oferim servicii precum </p>
-        <ul>
-            <li>Case la <b>rosu</b></li>
-            <li>Case la <b>cheie</b></li>
-            <li>Apartmente</li>
-        </ul>
-
-        <iframe
-            src="https://www.casaprima.ro/?gclid=Cj0KCQiAgaGgBhC8ARIsAAAyLfHsgwiIFrnwNUCimGD-w0cOipLl2kVbpMlJ8K1N2qfDhGVwuXXEopcaAmW_EALw_wcB"
-            width="100%" height="500">
-        </iframe>
-        <h3>
-            Pentru mai multe detalii, completați formularul de mai jos pentru a fi contactați:
-        </h3>
-
-        <form id="registration">
-            <fieldset>
-                <label>Nume:</label>
-                <input type="text" name="lastname"><br>
-                <label>Prenume:</label>
-                <input type="text" name="firstname"><br>
-                <label>Parolă:</label>
-                <input type="password" name="password"><br>
-                <label>Tip casă:</label>
-                <select name="tip casa" id="houseType">
-                    <option value="casa_parter">Casă doar cu parter</option>
-                    <option value="casa_etaj">Casă cu parter și etaj</option>
-                    <option value="duplex_parter">Duplex doar cu parter</option>
-                    <option value="duplex_etaj">Duplex cu parter și etaj</option>
-                </select>
-                <br><br>
-                <label><b>Alte informații legate de așteptările dumneavoastră:</b></label>
-                <br>
-                <textarea name="info" id="info" cols="30" rows="10"></textarea>
-                <br>
-                <input type="checkbox" id="agreement" name="agreement" value="agr">
-                <label for="agreement"> Sunt de acord cu condițiile.</label>
-                <br>
-                <input id="submitBtn" type="submit" value="Submit">
-            </fieldset>
-        </form>
-
-        <!-- https://html.spec.whatwg.org/multipage/ -->
-
-
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1344.60701208342!2d26.29051563901221!3d47.62197080065909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4734fd03ff658bf5%3A0xde08f257e51fe462!2sBogdan%20Voda%20682%2C%20Ipote%C8%99ti%20727325!5e0!3m2!1sro!2sro!4v1686173672993!5m2!1sro!2sro" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
+
+    <a id="whatsapp" class="whatsapp" href="https://wa.me/+40758532546">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+    <a id="phone" class="phone" href="tel:0758532546">
+        <i class="fa fa-phone"></i>
+    </a>
     <footer>
-        &copy; Imobiliare.ro 2023
+
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Despre</h1>
+                    <p>Case Duciuc vă pune la dispoziție cele mai bune servicii.</p>
+                    <p>Casele sunt racordate la toate utilitățile:</p>
+                    <ul>
+                        <li>apă</li>
+                        <li>canalizare</li>
+                        <li>energie electrică</li>
+                        <li>gaz metan</li>
+                    </ul>
+    
+            </div>
+            <div class="footer-section links">
+                <h2>Produse</h2>
+                <ul>
+                    <a href="/apartamente.html">
+                        <li>Apartament roșu/cheie</li>
+                    </a>
+                    <a href="/case.html">
+                        <li>Case roșu/cheie</li>
+                    </a>
+                    <a href="/duplex.html">
+                        <li>Duplexuri roșu/cheie;</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact</h1>
+                    <a class="contact-links" href="tel:0758532546"><i class="fa fa-phone"> 0758532546</i></a>
+                    <br>
+                    <a class="contact-links" href="https://wa.me/+40758532546"><i class="fa fa-whatsapp">
+                            0758532546</i></a>
+                    <br>
+                    <a class="contact-links" href="mailto:duciucdanut10@gmail.com"><i class="fa fa-envelope">
+                            duciucdanut10@gmail.com</i></a>
+            </div>
+
+            <!-- <div class="footer-section contact-form"></div> -->
+        </div>
+
+        <div class="footer-bottom">
+            &copy; CASE DUCIUC S.R.L.
+        </div>
     </footer>
 </body>
 

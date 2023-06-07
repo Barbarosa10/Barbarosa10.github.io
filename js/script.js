@@ -6,11 +6,47 @@ function menuClick() {
 }
 
 
+
+let slideImageIndex = 1;
+// showImageSlides(slideImageIndex, 'apartments');
+
+
+function showImageSlides(n, buildingType){
+  slideImageIndex = n;
+  let i;
+  let slides;
+  if(buildingType == "apartments")
+    slides = document.getElementsByClassName("apartmentsSlides");
+  else if(buildingType == "duplex")
+    slides = document.getElementsByClassName("duplexSlides");
+  else if(buildingType == "house")
+    slides = document.getElementsByClassName("houseSlides");
+  //   let dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) { slideImageIndex = 1 }
+  if (n < 1) { slideImageIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  //   for (i = 0; i < dots.length; i++) {
+  //     dots[i].className = dots[i].className.replace(" active", "");
+  //   }
+  slides[slideImageIndex - 1].style.display = "block";
+  //   dots[slideIndex-1].className += " active";
+}
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n, buildingType) {
+  if(buildingType == '')
+    showSlides(slideIndex += n);
+  else if(buildingType == 'apartments')
+    showImageSlides(slideImageIndex += n, 'apartments');
+  else if(buildingType == 'duplex')
+    showImageSlides(slideImageIndex += n, 'duplex');
+  else if(buildingType == 'house')
+    showImageSlides(slideImageIndex += n, 'house');
 }
 
 function currentSlide(n) {
@@ -88,3 +124,11 @@ phone();
 setInterval(phone, 700);
 whatsapp();
 setInterval(whatsapp, 700);
+
+// const butonProduse = document.getElementById('button-produse');
+// const listaProduse = document.getElementsByClassName('lista-produse')[0];
+
+// butonProduse.addEventListener('click', function(event) {
+//   event.preventDefault();
+//   listaProduse.classList.toggle('produse-afisate');
+// });

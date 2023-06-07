@@ -10,7 +10,7 @@
     <script src="./js/script.js" defer></script>
 </head>
 
-<body>
+<body onload="showImageSlides(1, 'apartments')">
     <nav class="navbar">
         <div class="logo">
             <a href="/index.html">
@@ -18,15 +18,8 @@
             </a>
         </div>
         <div class="nav-list" id="navi-list">
-            <a class="active" href="/index.html">Acasă</a>
-            <!-- <div class="lista-produse">
-                <a href="#" id="button-produse">Produse</a>
-                <div class="drop-list">
-                    <a href="/apartamente.html">Apartamente</a>
-                    <a href="/case.html">Case</a>
-                    <a href="/duplex.html" >Duplexuri</a>
-                </div>
-            </div> -->
+            <a  href="/index.html">Acasă</a>
+            <!-- <a class="active" href="/produse.html">Produse</a> -->
             <a href="/despre.html" >Despre</a>
         </div>
         <div class="menu" id="toggle-button">
@@ -35,52 +28,40 @@
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
             </button>
+
         </div>
     </nav>
 
-    <header>
-        <div class="slideshow-container">
+    <main class="page-wrapper" >
+        
+        <div class="about">
+            <h1>Apartamente</h1>
+            <p>Apartamentele se află într-un bloc poziționat la strada principală. Acestea sunt împărțite pe trei etaje.</p>
+        </div>
 
-            <div class="mySlides fade">
+        <div class="slideshow-container-apartments">
+
+            <div class="apartmentsSlides fade">
                 <img src="imagini/img001.png" style="width:100%">
             </div>
 
-            <div class="mySlides fade">
-                <img src="imagini/img002.png" style="width:100%">
+            <div class="apartmentsSlides fade">
+                <img src="imagini/bloc.png" style="width:100%">
             </div>
 
-            <div class="mySlides fade">
-                <img src="imagini/house.png" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="imagini/img004.png" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="imagini/img005.png" style="width:100%">
-            </div>
             <!-- <div class="mySlides fade">
                 <img src="imagini/img4.png" style="width:100%">
             </div> -->
 
-            <a class="prev" onclick="plusSlides(-1, '')">❮</a>
-            <a class="next" onclick="plusSlides(1, '')">❯</a>
+            <a class="prev" onclick="plusSlides(-1, 'apartments')">❮</a>
+            <a class="next" onclick="plusSlides(1, 'apartments')">❯</a>
 
         </div>
-        <!-- <img src="imagini/logooo.jpg" alt=""> -->
-    </header>
-    <main class="page-wrapper">
-        <div class="about">
-            <h1>Despre noi</h1>
-            <p>Societatea CASE DUCIUC SRL, fondată în 2016, îți oferă o gamă largă de servicii, pentru a asigura o viață
-                mai bună.</p>
-        </div>
-        <br><br>
+<!-- 
         <div class="services">
             <div class="container">
 
-                <div class="theBox3"><a href="/apartamente.html">
+                <div class="theBox3"><a href="/despre.html">
                         <img src="imagini/img001.png">
                         <div class="txtBox3">
                             <h3>Apartamente roșu/cheie </h3>
@@ -88,21 +69,21 @@
                     </a>
                 </div>
 
-                <div class="theBox3"><a href="/duplex.html">
+                <div class="theBox3"><a href="/despre.html">
                         <img src="imagini/img004.png">
                         <div class="txtBox3">
                             <h3>Duplex roșu/cheie</h3>
                         </div>
                     </a>
                 </div>
-                <div class="theBox3"><a href="/case.html">
-                        <img src="imagini/house.png">
+                <div class="theBox3"><a href="/despre.html">
+                        <img src="imagini/img003.png">
                         <div class="txtBox3">
                             <h3>Case roșu/cheie</h3>
                         </div>
                     </a>
                 </div>
-            </div>
+            </div> -->
             <!-- <div class="container">
 
 
@@ -131,7 +112,7 @@
                         <img src="imagini/duplex.png" width="250px" alt="">
                     </a>
                 </div> -->
-        <!-- </div> -->
+        </div>
         <!-- <a href="./despre.html">
                 <img src="imagini/icon1.png" alt="buttonpng"  />
                 mult scris
@@ -164,13 +145,13 @@
             <div class="footer-section links">
                 <h2>Produse</h2>
                 <ul>
-                    <a href="/apartamente.html">
+                    <a href="/produse.html">
                         <li>Apartament roșu/cheie</li>
                     </a>
-                    <a href="/case.html">
+                    <a href="/produse.html">
                         <li>Case roșu/cheie</li>
                     </a>
-                    <a href="/duplex.html">
+                    <a href="/produse.html">
                         <li>Duplexuri roșu/cheie;</li>
                     </a>
                 </ul>
