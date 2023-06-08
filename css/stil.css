@@ -62,7 +62,9 @@ a{
     -webkit-tap-highlight-color: transparent;
     cursor: pointer;
 }
-
+.info-produse{
+    text-align: left;
+}
 /* .lista-produse{
     display: none;
 }

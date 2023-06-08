@@ -1,15 +1,10 @@
 
 function menuClick() {
-  // let toggleButton = document.getElementById('toggle-button')
   let naviList = document.getElementById('navi-list')
   naviList.classList.toggle('active');
 }
 
-
-
-let slideImageIndex = 1;
-// showImageSlides(slideImageIndex, 'apartments');
-
+let slideImageIndex;
 
 function showImageSlides(n, buildingType){
   slideImageIndex = n;
@@ -21,18 +16,15 @@ function showImageSlides(n, buildingType){
     slides = document.getElementsByClassName("duplexSlides");
   else if(buildingType == "house")
     slides = document.getElementsByClassName("houseSlides");
-  //   let dots = document.getElementsByClassName("dot");
 
   if (n > slides.length) { slideImageIndex = 1 }
   if (n < 1) { slideImageIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  //   for (i = 0; i < dots.length; i++) {
-  //     dots[i].className = dots[i].className.replace(" active", "");
-  //   }
+
   slides[slideImageIndex - 1].style.display = "block";
-  //   dots[slideIndex-1].className += " active";
+
 }
 
 let slideIndex = 1;
@@ -56,17 +48,14 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  //   let dots = document.getElementsByClassName("dot");
+  
   if (n > slides.length) { slideIndex = 1 }
   if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  //   for (i = 0; i < dots.length; i++) {
-  //     dots[i].className = dots[i].className.replace(" active", "");
-  //   }
+
   slides[slideIndex - 1].style.display = "block";
-  //   dots[slideIndex-1].className += " active";
 }
 let slide = 1;
 function changeImg() {
@@ -79,7 +68,7 @@ function changeImg() {
   }
   slides[slideIndex - 1].style.display = "block";
   slideIndex += 1;
-  setTimeout("changeImg()", 4000)
+  setTimeout("changeImg()", 3000)
 }
 window.onload = changeImg;
 
@@ -124,11 +113,3 @@ phone();
 setInterval(phone, 700);
 whatsapp();
 setInterval(whatsapp, 700);
-
-// const butonProduse = document.getElementById('button-produse');
-// const listaProduse = document.getElementsByClassName('lista-produse')[0];
-
-// butonProduse.addEventListener('click', function(event) {
-//   event.preventDefault();
-//   listaProduse.classList.toggle('produse-afisate');
-// });
