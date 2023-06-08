@@ -27,8 +27,6 @@ function showImageSlides(n, buildingType){
 
 }
 
-let slideIndex = 1;
-showSlides(slideIndex);
 
 function plusSlides(n, buildingType) {
   if(buildingType == '')
@@ -44,8 +42,9 @@ function plusSlides(n, buildingType) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
+var slideIndex = 1;
 function showSlides(n) {
+  slideIndex = n;
   let i;
   let slides = document.getElementsByClassName("mySlides");
   
@@ -70,8 +69,11 @@ function changeImg() {
   slideIndex += 1;
   setTimeout("changeImg()", 3000)
 }
-window.onload = changeImg;
 
+function start_index(){
+  showSlides(1);
+  changeImg();
+}
 
 function phone(){
   let phone = document.getElementById("phone");
@@ -109,6 +111,7 @@ setTimeout(function () {
     phone.style = "font-size: 53px;";
   }, 700);
 }
+
 phone();
 setInterval(phone, 700);
 whatsapp();
