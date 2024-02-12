@@ -1,1 +1,3 @@
-# Barbarosa10.github.io
+# CASE DUCIUC real estate company hosted with github pages
+
+* https://duciuc.me/
